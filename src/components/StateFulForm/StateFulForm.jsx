@@ -4,14 +4,15 @@ const StateFulForm = () => {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
+  const [error,setError]=useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, password);
   };
-  const handleNameChange=e=>{
-    setName(e.targe.value)
-  }
+  const handleNameChange = (e) => {
+    setName(e.targe.value);
+  };
 
   const handleEmailChange = (e) => {
     // console.log(e.target.value);
@@ -31,7 +32,7 @@ const StateFulForm = () => {
         <input
           onChange={handlePasswordChange}
           type="password"
-          name="password"
+          name="password" required
         />
         <br />
         <input type="submit" value="Submit" />
