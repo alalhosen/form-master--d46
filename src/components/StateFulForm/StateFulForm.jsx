@@ -29,6 +29,7 @@ const StateFulForm = () => {
   };
   return (
     <div>
+        <h2>StateFulForm</h2>
       <form onSubmit={handleSubmit}>
         <input
           value={name}
