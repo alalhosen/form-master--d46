@@ -18,7 +18,7 @@ const RefForm = () => {
   };
 
   return (
-    <div>
+    <div> 
         <h2>RefForm</h2>
       <form onSubmit={handleSubmit}>
         <input ref={nameRef} type="text" name="name" />
