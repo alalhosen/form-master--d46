@@ -3,7 +3,7 @@ import React from "react";
 const ReusableForm = ({
   formTitle,
   handleSubmit,
-  submitBtnText = "Submit",
+ submitBtnText = "Submit", children
 }) => {
   const handleLocalSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ const ReusableForm = ({
   };
   return (
     <div>
-      <h2>{formTitle}</h2>
+      {children}
       <form onSubmit={handleLocalSubmit}>
         <input type="text" name="name" />
         <br />

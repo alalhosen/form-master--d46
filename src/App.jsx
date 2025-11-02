@@ -22,13 +22,21 @@ function App() {
       {/* <HookForm></HookForm> */}
       <ReusableForm
         formTitle={"Sign Up"}
-        handleSubmit={handleSignUpSubmit}
-      ></ReusableForm>
+        handleSubmit={handleSignUpSubmit}> 
+      <div>
+        <h2>Sign Up</h2>
+        <p>Please sign up right now</p>
+      </div>
+      </ReusableForm>
       <ReusableForm
         formTitle={"Profile Update"}
         handleSubmit={handleUpdateProfile}
-        submitBtnText="Update"
-      ></ReusableForm>
+        submitBtnText="Update">
+          <div>
+            <h2>Update Profile</h2>
+            <p>Always keep your profile updated</p>
+          </div>
+        </ReusableForm>
     </>
   );
 }
