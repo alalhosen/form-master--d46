@@ -6,21 +6,21 @@ import ReusableForm from "./components/ReusableForm/ReusableForm";
 // import StateFulForm from './components/StateFulForm/StateFulForm'
 
 function App() {
-  const handleSignUpSubmit = (data) => {
-    console.log("sign up data", data);
-  };
-  const handleUpdateProfile = (data) => {
-    console.log("update profile data", data);
-  };
+  // const handleSignUpSubmit = (data) => {
+  //   console.log("sign up data", data);
+  // };
+  // const handleUpdateProfile = (data) => {
+  //   console.log("update profile data", data);
+  // };
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
       {/* <SimpleForm></SimpleForm> */}
       {/* <StateFulForm></StateFulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
-      <ReusableForm
+      {/* <ReusableForm
         formTitle={"Sign Up"}
         handleSubmit={handleSignUpSubmit}> 
       <div>
@@ -36,7 +36,7 @@ function App() {
             <h2>Update Profile</h2>
             <p>Always keep your profile updated</p>
           </div>
-        </ReusableForm>
+        </ReusableForm> */}
     </>
   );
 }
