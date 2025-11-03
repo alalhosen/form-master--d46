@@ -4,7 +4,7 @@ import Dad from "../Dad/Dad";
 import Uncle from "../Uncle/Uncle";
 import "./Grandpa.css";
 
-const AssetContext = createContext("gold");
+export const AssetContext = createContext("gold");
 
 const Grandpa = () => {
   const asset = "diamond";
@@ -26,6 +26,6 @@ export default Grandpa;
 
 /**
  * 1. Create a context and export it
- * 2. Add provider for the context with a value.
- * 3. 
+ * 2. Add provider for the context with a value. value could be anythin
+ * 3. useContext to access value in the context API
  */
